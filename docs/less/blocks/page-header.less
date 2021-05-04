@@ -1,0 +1,144 @@
+.page-header {
+  background-color: @black;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 23px;
+    padding-bottom: 15px;
+  }
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.main-nav {
+  margin: 0;
+  order: -1;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+    margin: 0 20px;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+  top: -3px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/icon-burger.svg");
+  width: 40px;
+  height: 40px;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../img/icon-close.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  min-width: 230px;
+  z-index: 5;
+  background-color: @black;
+  box-shadow: 0 0 17px 0 rgba(10, 47, 82, 0.3);
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    margin-left: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 12px;
+    margin-top: -7px;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.main-nav__item {
+  padding: 10px 15px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 20px 0 25px;
+  }
+}
+
+.main-nav__link {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}

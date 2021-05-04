@@ -1,0 +1,21 @@
+.button {
+  box-sizing: border-box;
+  padding: 18px 32px;
+  color: @black;
+  text-align: center;
+  outline: none;
+  background: @orange;
+  display: block;
+  font-size: 18px;
+  border: none;
+  border-radius: 7px;
+
+  &:focus,
+  &:hover {
+    color: fade(@black, 70%);
+  }
+
+  &:active {
+    color: fade(@black, 30%);
+  }
+}

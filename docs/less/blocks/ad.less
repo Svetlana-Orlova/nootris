@@ -1,0 +1,111 @@
+.ad {
+  background-color: @black;
+  background-image: url("../img/main-picture.png"), url("../img/bg.svg"), linear-gradient(180deg, rgba(252, 181, 0, 1) 85%, rgba(0, 0, 0, 1) 85%);
+  background-position: right 65%, center top, 100%;
+  background-repeat: no-repeat;
+  background-size: 50% auto, auto;
+  min-height: 500px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    min-height: 750px;
+    background-position: right bottom, center top, 100%;
+    background-size: 65% auto, auto;
+  }
+
+  @media (min-width: 900px) {
+    background-size: 55% auto, auto, 100%;
+  }
+
+  @media (min-width: 1110px) {
+    background-size: 47% auto, auto, 100%;
+  }
+
+  @media (min-width: 1330px) {
+    background-size: 44% auto, auto, 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 984px;
+    background-size: 816px 984px, 100% auto, 100%;
+  }
+}
+
+.ad__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 106%;
+  color: @white;
+  text-transform: uppercase;
+  padding-top: 110px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 75px;
+    padding-top: 176px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 144px;
+    padding-top: 184px;
+  }
+}
+
+.ad__description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 24px;
+  max-width: 260px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 335px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 672px;
+    margin-top: 32px;
+    letter-spacing: -0.4px;
+  }
+}
+
+.ad__subtitle {
+  margin-top: 95px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 108px;
+    letter-spacing: -0.5px;
+  }
+}
+
+.ad__subdescription {
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

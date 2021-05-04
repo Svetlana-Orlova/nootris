@@ -1,0 +1,149 @@
+.discount {
+  background-color: @black;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 70px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 112px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: 1600px) {
+    padding-top: 40px;
+  }
+}
+
+.discount__title {
+  color: @white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 48px;
+    line-height: 57px;
+  }
+}
+
+.discount__subtitle {
+  color: @orange;
+}
+
+.discount__price {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 80px;
+  }
+}
+
+.discount__price-uncurrent {
+  color: @grey;
+  text-decoration-line: line-through;
+  font-weight: normal;
+  font-size: 36px;
+  margin-right: 45px;
+}
+
+.discount__price-current {
+  color: @white;
+  font-weight: normal;
+  font-size: 48px;
+  margin-right: -35px;
+}
+
+.discount__list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 670px;
+  }
+
+  @media (min-width: 948px) {
+    max-width: 100%;
+  }
+}
+
+.discount__item {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 288px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 284px;
+  }
+
+  @media (min-width: 948px) {
+    margin-top: 53px;
+    padding-left: 13px;
+  }
+}
+
+.discount__item--ginger {
+  order: 0;
+
+  @media (min-width: 948px) {
+    order: -2;
+    margin-top: 44px;
+  }
+}
+
+.discount__item--nootris {
+  order: -1;
+}
+
+.discount__description {
+  color: @white;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-top: -10px;
+  display: block;
+}
+
+.discount__extradescription {
+  color: @orange;
+}
+
+.discount__description--main {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.discount__extradescription--main {
+  font-size: 24px;
+  margin-top: 14px;
+  display: block;
+}
+
+.discount__button {
+  max-width: 256px;
+  margin: 66px auto 0;
+  transform: translateX(10px);
+}
